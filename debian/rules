@@ -1,0 +1,6 @@
+#!/usr/bin/make -f
+
+# Tell nodejs to look for embedded modules
+
+%:
+	dh $@

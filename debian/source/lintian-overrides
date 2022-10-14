@@ -1,0 +1,4 @@
+# it's a test so long lines are expected
+source-contains-prebuilt-javascript-object test/posix-classes.js line length is 284 characters (>256)
+source-is-missing test/posix-classes.js line length is 284 characters (>256)
+source-contains-prebuilt-javascript-object test/braces-compiled.js

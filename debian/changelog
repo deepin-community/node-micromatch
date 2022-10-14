@@ -1,0 +1,110 @@
+node-micromatch (4.0.2+repack+~4.0.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * Embed @types/micromatch and repack
+  * Add a break against node-typescript-types < 20201105-1~
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 05 Nov 2020 11:07:25 +0100
+
+node-micromatch (4.0.2+repack-3) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Remove some ES6 features not compatible with rollup < 2
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 23 Apr 2020 15:00:46 +0200
+
+node-micromatch (4.0.2+repack-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests (Closes: #917873)
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 17 Dec 2019 22:31:29 +0100
+
+node-micromatch (4.0.2+repack-1) experimental; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Remove unneeded components and repack
+  * Switch install to pkg-js-tools
+  * Clean dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 17 Dec 2019 22:27:02 +0100
+
+node-micromatch (4.0.2-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Julien Puydt ]
+  * Team upload.
+  * New upstream release.
+  * Update packaging:
+    - Bump d/watch to version 4
+    - Move from section web to section javascript
+    - Use https in d/copyright's Format
+    - Clean d/rules
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+  * New upstream release
+  * Update packaging:
+    - Bump dh compat to 11
+    - Bump std-ver to 4.1.4
+
+  [ Pirate Praveen ]
+  * Enable tests
+  * Add nanomatch as a component
+  * Add object.pick as a component
+  * Add embedded modules to NODE_PATH
+  * Update build deps, add node-is-windows
+  * Rename object-pick to object.pick
+  * Update build depends for test
+  * Set maximum version for node-snapdragon for node-braces
+  * Add braces 2.x as component
+  * Update dependencies for embedded braces
+  * Add snapdragon-node as component
+  * Add snapdragon-util as a component
+  * Add extend-shallow 2.x as a component
+  * Install extend-shallow 2.x
+  * Add fill-range as a component
+  * Use embedded fill-range
+  * Install fill-range under node_modules
+  * Add is-number as component
+  * Add node-repeat-string dependency
+  * Add node-to-regex-range as dependency
+
+  [ Xavier Guimard ]
+  * New upstream version 4.0.2
+  * Add debian/clean
+  * Add node-braces >= 3.0.2 in dependencies
+  * Link braces no node_modules/ during build (else test fails for an unknown
+    reason)
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Move installed files to /usr/share/nodejs
+  * Add upstream/metadata
+  * Switch test to pkg-js-tools
+  * Remove unneeded dependency versions
+  * Fix debian/copyright
+  * Install examples
+  * Fix components install
+  * Update lintian-overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 20 Jul 2019 13:23:40 +0200
+
+node-micromatch (2.3.11-1) unstable; urgency=low
+
+  * Initial release (Closes: #843500)
+
+ -- Sruthi Chandran <srud@disroot.org>  Wed, 09 Nov 2016 14:44:12 +0530
